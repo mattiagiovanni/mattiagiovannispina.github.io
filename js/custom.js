@@ -26,16 +26,6 @@
     }
   });
 
-  // About section scroll
-  $(".overlay-detail a").on('click', function(event) {
-    event.preventDefault();
-    var hash = this.hash;
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function() {
-      window.location.hash = hash;
-    });
-  });
 
   //jQuery to collapse the navbar on scroll
   $(window).scroll(function() {
@@ -44,12 +34,7 @@
     } else {
       $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
-  });
 
-  // Testimonials Slider
-  $('.bxslider').bxSlider({
-    adaptiveHeight: true,
-    mode: 'fade'
   });
 
 })(jQuery);
